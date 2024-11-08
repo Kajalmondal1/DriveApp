@@ -1,0 +1,1 @@
+1. To register a api file you have to mention it in bootstrap/app.php file in withRouting function
