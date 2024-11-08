@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'drive' => [
+            'driver' => 'jwt',
+            'provider' => 'driveUsers',
+        ],
     ],
 
     /*
@@ -69,6 +73,10 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+        'driveUsers' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_MODEL',App\Models\driveUser::class),
+        ],
     ],
 
     /*
